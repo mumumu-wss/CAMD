@@ -26,7 +26,7 @@
     - [🤗 Pre-trained Checkpoints](#pre-trained-model)
       - [📥 Download Manually](#download-manually)
       - [💻 Download Script](#download-script)
-  - [⚡ Fine-tuning FSFM Pre-trained ViTs for Downstream Tasks](#fsfm-finetuning)
+  - [⚡ Fine-tuning CAMD Pre-trained ViTs for Downstream Tasks](#CAMD-finetuning)
     - [⚫ Face Parsing and Face Alignment](#fpafa)
       - [⬇️ Dataset Preparation](#dfd-dataset-preparation)
       - [⚡ Fine-tuning](#dfd-finetuning)
