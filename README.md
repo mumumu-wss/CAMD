@@ -18,27 +18,23 @@
   - [⏳ CAMD Pre-training](#CAMD-pretraining)
     - [⚫ Pre-training Data](#pre-training-data)
       - [⬇️ Dataset Preparation](#pt-dataset-preparation)
-      - [⬇️ Toolkit Preparation](#toolkit-preparation)
       - [📁 Folder Structure](#folder-structure)
     - [⚫ Pre-training Model](#pre-training-model)
-      - [🚀 Model and Data Scaling](#model-and-data-scaling)
-      - [💾 Pre-training/Resume from Checkpoint](#resume-for-pretraining)
+      - [🔄 Pre-training from Scratch](#pre-training-from-scratch)
+      - [🚀 Model Scaling](#model-and-data-scaling)
     - [🤗 Pre-trained Checkpoints](#pre-trained-model)
       - [📥 Download Manually](#download-manually)
-      - [💻 Download Script](#download-script)
   - [⚡ Fine-tuning CAMD Pre-trained ViTs for Downstream Tasks](#CAMD-finetuning)
-    - [⚫ Face Parsing and Face Alignment](#fpafa)
-      - [⬇️ Dataset Preparation](#dfd-dataset-preparation)
-      - [⚡ Fine-tuning](#dfd-finetuning)
-        - [✨ Fine-tuning with different dataset structure](#finetuning-different-dataset) 
-      - [📊 Cross-Datasets Evaluation](#dfd-testing)
     - [⚫ Facial Attribute Recognition](#far)
       - [⬇️ Dataset Preparation](#far-dataset-preparation)
+      - [📁 FAR Folder Structure](#far-folder-structure)
       - [⚡ Fine-tuning](#far-finetuning)
-      - [📊 Cross-Datasets Evaluation](#diff-testing)
-    - [⚫ Head Pose Estimation](#HPE)
-      - [⬇️ Dataset Preparation](#fas-dataset-preparation)
-      - [⚡ Fine-tuning and Evaluation](#fas-finetuning)
+    - [⚫ Facial Expression Recognition](#fer)
+      - [⬇️ Dataset Preparation](#fer-dataset-preparation)
+      - [📁 FER Folder Structure](#fer-folder-structure)
+      - [⚡ Fine-tuning](#fer-finetuning)
+    - [⚫ Face Parsing and Face Alignment](#fpandfa)
+    - [⚫ Head Pose Estimation](#hpe)
   - [Citation](#citing-CAMD)
 
 ---
@@ -58,7 +54,7 @@ conda env create -f ./environment.yml
 
 #  🚀 CAMD Pre-training
 
-<a id="fsfm-pretraining"></a>
+<a id="CAMD-pretraining"></a>
 The implementation of pre-training CAMD ViT models from unlabeled facial images.
 
 <a id="download-script"></a>
@@ -147,7 +143,7 @@ The implementation of fine-tuning pre-trained model on various downstream face s
 <a id="far"></a>
 
 <details style="margin-left: 20px;">
-<a id="diff-dataset-preparation"></a>
+<a id="far-dataset-preparation"></a>
 <summary style="font-size: 20px; font-weight: bold;">⬇️ Dataset Preparation</summary>
 
 
@@ -157,7 +153,7 @@ We train and test on CelebA and LFWA respectively. Download these datasets and r
 - [LFWA](https://drive.google.com/drive/folders/0B7EVK8r0v71pQ3NzdzRhVUhSams?resourcekey=0-Kpdd6Vctf-AdJYfS55VULA)
 </details>
 <details style="margin-left: 20px;">
-<a id="diff-folder-structure"></a>
+<a id="far-folder-structure"></a>
 <summary style="font-size: 20px; font-weight: bold;">📁 FAR Folder Structure</summary>
 
 
@@ -176,7 +172,7 @@ datasets/
 ```
 </details>
 <details style="margin-left: 20px;">
-<a id="diff-finetuning"></a>
+<a id="far-finetuning"></a>
 <summary style="font-size: 20px; font-weight: bold;">⚡ Fine-tuning</summary>
 
 `cd CAMD` and run the script `sh run_CAMD_far_finetune.sh` to fine-tune the model:
@@ -189,14 +185,21 @@ datasets/
 <a id="fer"></a>
 
 <details style="margin-left: 20px;">
-<a id="fas-dataset-preparation"></a>
+<a id="fer-dataset-preparation"></a>
 <summary style="font-size: 20px; font-weight: bold;">⬇️ Dataset Preparation</summary>
 
 - We train and test on ferplus and RAF-DB respectively. Download these datasets and refer to [FER Folder Structure](#far-folder-structure).
 
   - [ferplus](https://github.com/microsoft/FERPlus)
   - [RAF-DB](https://www.kaggle.com/datasets/shuvoalok/raf-db-dataset)
+  </details>
 
+<details style="margin-left: 20px;">
+<a id="fer-folder-structure"></a>
+<summary style="font-size: 20px; font-weight: bold;">📁 FAR Folder Structure</summary>
+
+
+The following is the **default Folder Structure** for unseen FAR. The paths in each directory are described in the comments. 
   ```bash
   datasets/
   ├── downstream/
@@ -212,7 +215,7 @@ datasets/
   </details>
 
 <details style="margin-left: 20px;">
-<a id="fas-finetuning"></a>
+<a id="fer-finetuning"></a>
 <summary style="font-size: 20px; font-weight: bold;">⚡ Fine-tuning and Evaluation</summary>
 
 `cd CAMD` and run the script `sh run_CAMD_fer_finetune.sh` to fine-tune the model:
@@ -229,13 +232,13 @@ For the implementation of this part of the downstream tasks, please refer to [Fa
 
 ## ⚫ Head Pose Estimation (HPE)
 
-<a id="fpandfa"></a>
+<a id="hpe"></a>
 
 For the implementation of this part of the downstream tasks, please refer to [TokenHPE](https://github.com/zc2023/TokenHPE)
 
 # Citation
 
-<a id="citation"></a>
+<a id="citing-CAMD"></a>
 
 If our research helps your work, please consider giving us a star ⭐ or citing us:
 
