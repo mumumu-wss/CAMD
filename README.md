@@ -196,10 +196,10 @@ datasets/
 
 <details style="margin-left: 20px;">
 <a id="fer-folder-structure"></a>
-<summary style="font-size: 20px; font-weight: bold;">📁 FAR Folder Structure</summary>
+<summary style="font-size: 20px; font-weight: bold;">📁 FER Folder Structure</summary>
 
 
-The following is the **default Folder Structure** for unseen FAR. The paths in each directory are described in the comments. 
+The following is the **default Folder Structure** for unseen FER. The paths in each directory are described in the comments. 
   ```bash
   datasets/
   ├── downstream/
