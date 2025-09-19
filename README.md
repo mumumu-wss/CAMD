@@ -74,7 +74,7 @@ The implementation of pre-training CAMD ViT models from unlabeled facial images.
 For paper implementation, we have pre-trained our model on the following datasets. Download these datasets optionally and refer to [Folder Structure](#folder-structure).
 
 - [VGGFace2](https://github.com/ox-vgg/vgg_face2) _for main experiments (raw data: images)_ 
-
+</details>
 <details>
 <a id="folder-structure"></a>
 <summary style="font-size: 20px; font-weight: bold;">📁 Folder Structure</summary>
@@ -131,7 +131,7 @@ datasets/
 We provide the model weights.
 
 coming soon.
-
+</details>
 ---
 
 #  ⚡ Fine-tuning CAMD Pre-trained ViTs for Downstream Tasks
@@ -172,14 +172,14 @@ datasets/
 │   │   ├── lfw/
 │   │   ├── lfw_attributes.txt/
 ```
-
+</details>
 <details style="margin-left: 20px;">
 <a id="diff-finetuning"></a>
 <summary style="font-size: 20px; font-weight: bold;">⚡ Fine-tuning</summary>
 
 `cd CAMD` and run the script `sh run_CAMD_far_finetune.sh` to fine-tune the model:
 
-
+</details>
 ## ⚫ Facial Expression Recognition  (FER)
 
 <a id="fer"></a>
@@ -212,7 +212,7 @@ datasets/
 <summary style="font-size: 20px; font-weight: bold;">⚡ Fine-tuning and Evaluation</summary>
 
 `cd CAMD` and run the script `sh run_CAMD_fer_finetune.sh` to fine-tune the model:
-
+</details>
 ---
 
 ## ⚫ Face Parsing and Face Alignment (FP and FA)
