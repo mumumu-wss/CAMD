@@ -148,11 +148,12 @@ The implementation of fine-tuning pre-trained model on various downstream face s
 <a id="diff-dataset-preparation"></a>
 <summary style="font-size: 20px; font-weight: bold;">⬇️ Dataset Preparation</summary>
 
+
 We train and test on CelebA and LFWA respectively. Download these datasets and refer to [FAR Folder Structure](#far-folder-structure).
 
 - [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 - [LFWA](https://drive.google.com/drive/folders/0B7EVK8r0v71pQ3NzdzRhVUhSams?resourcekey=0-Kpdd6Vctf-AdJYfS55VULA)
-
+</details>
 <details style="margin-left: 20px;">
 <a id="diff-folder-structure"></a>
 <summary style="font-size: 20px; font-weight: bold;">📁 FAR Folder Structure</summary>
