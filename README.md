@@ -132,6 +132,8 @@ We provide the model weights.
 
 coming soon.
 </details>
+
+
 ---
 
 #  ⚡ Fine-tuning CAMD Pre-trained ViTs for Downstream Tasks
@@ -180,6 +182,8 @@ datasets/
 `cd CAMD` and run the script `sh run_CAMD_far_finetune.sh` to fine-tune the model:
 
 </details>
+
+
 ## ⚫ Facial Expression Recognition  (FER)
 
 <a id="fer"></a>
@@ -213,6 +217,8 @@ datasets/
 
 `cd CAMD` and run the script `sh run_CAMD_fer_finetune.sh` to fine-tune the model:
 </details>
+
+
 ---
 
 ## ⚫ Face Parsing and Face Alignment (FP and FA)
