@@ -10,6 +10,7 @@
 
 ## Release🎉 
 
+*  **2025-11.11**: Congratulations on our article being accepted by TCSVT! We will be updating the code and weight files later.
 *  **2025-9.19**: All codes including data-preprocessing, pre-training, fine-tuning, and testing are released at [this page](https://github.com/mumumu-wss/CAMD/edit/main)
 
 ## Table of Contents
